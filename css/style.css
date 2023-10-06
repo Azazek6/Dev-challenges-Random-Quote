@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #111629;
+  font-family: 'Outfit', sans-serif;
+}
+
+p {
+  color: white
+}
+
+.card {
+  margin: 0 auto;
+  margin-top: 150px;
+  background-image: url("../images/bg-image-random-quote.svg");
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  border-radius: 20px;
+  background-color: #20293A;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.card h3.card-title {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 23px;
+}
+
+.card .card-tags {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-tags .card-tags-name {
+  border: 1px solid #6466E9;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #6466E9;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.card p.card-body {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #97a2b6;
+}
+
+.card-button {
+  width: 5%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-button .card-button-list {
+  cursor: pointer;
+  text-align: center;
+  width: 30%;
+  border: 1px solid #4A5567;
+  padding: 10px;
+  border-start-start-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.card-button .card-button-list2 {
+  cursor: pointer;
+  text-align: center;
+  width: 30%;
+  border: 1px solid #4A5567;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-button .card-button-list:hover {
+  background-color: #20293A;
+  opacity: .8;
+}
+
+.card-button .card-button-list2:hover {
+  background-color: #20293A;
+  opacity: .8;
+}
+
+@media (max-width: 1150px) {
+  .card {
+    width: 50%;
+  }
+
+  .card-button {
+    width: 10%;
+  }
+
+  .card-button .card-button-list {
+    width: 25%;
+  }
+
+  .card-button .card-button-list2 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 80%;
+  }
+
+  .card-button .card-button-list {
+    width: 50%;
+  }
+
+  .card-button .card-button-list2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-button {
+    width: 20%;
+  }
+}
